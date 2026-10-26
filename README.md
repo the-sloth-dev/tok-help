@@ -5,6 +5,7 @@ Public support and feedback for **Tok**, an experimental private peer-to-peer me
 - [Report a bug](https://github.com/the-sloth-dev/tok-help/issues/new?template=bug_report.yml)
 - [Request a feature](https://github.com/the-sloth-dev/tok-help/issues/new?template=feature_request.yml)
 - [Other issue or question](https://github.com/the-sloth-dev/tok-help/issues/new?template=other_issue.yml)
+- [Request a private-network relay setup quote](https://github.com/the-sloth-dev/tok-help/issues/new?template=relay_setup.yml)
 - [Search existing issues](https://github.com/the-sloth-dev/tok-help/issues)
 
 Search open and closed issues for your symptom, platform or version before creating a report. If a matching issue exists, add your reproducible observations there. Submission requires a GitHub account. **Reports, comments and attachments are public.**
@@ -33,8 +34,16 @@ For more detail, open **Settings → Advanced → Connection diagnostics** in To
 
 Nothing is uploaded automatically. GitHub issue submissions and attachments have their own logging and privacy behavior; see [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Do not post confidential security details here; no private reporting channel is advertised in this repository.
 
+## Support Tok
+
+Voluntary contributions are intended to support ongoing Tok development and testing. A contribution link is being prepared; no payments are collected in this repository. Contributions do not purchase a feature, priority response or support agreement.
+
+For paid assistance with a Tok-compatible relay for a private network, [request a setup quote](https://github.com/the-sloth-dev/tok-help/issues/new?template=relay_setup.yml). Describe only your high-level goal, network type and constraints. Feasibility, scope, pricing and hosting/maintenance responsibilities must be agreed before work begins; the inquiry is not a purchase or a guarantee of availability.
+
+Do not post network addresses, hostnames, topology diagrams, VPN profiles, credentials, keys or diagnostic exports. Wait to agree how sensitive details can be handled privately before sharing access. A custom relay alone does not provide anonymity or complete network isolation: endpoint discovery may still use public infrastructure, relay operators observe metadata and device/OS restrictions remain. Tok is experimental and has no independent security audit. Hosting and infrastructure costs are separate unless explicitly included in the agreed scope.
+
 ## Maintaining the tracker
 
-Keep Issues enabled and preserve the `bug`, `enhancement` and `question` labels. The default branch contains `.github/ISSUE_TEMPLATE/bug_report.yml`, `feature_request.yml`, `other_issue.yml` and `config.yml`. These JSON-formatted YAML files use GitHub's native issue-form schema; blank issues are disabled. Required fields and optional attachments should stay consistent with the report descriptions. Keep the matching form copies and reporting links in the private website repository synchronized.
+Keep Issues enabled and preserve the `bug`, `enhancement`, `question` and `relay-setup` labels. The default branch contains `.github/ISSUE_TEMPLATE/bug_report.yml`, `feature_request.yml`, `other_issue.yml`, `relay_setup.yml` and `config.yml`. These JSON-formatted YAML files use GitHub's native issue-form schema; blank issues are disabled. Required fields and optional attachments should stay consistent with the report descriptions. Keep the matching form copies and reporting links in the private website repository synchronized.
 
 This tracker needs no backend, authentication token, Actions workflow or access to the private app repository. Do not commit private source, binaries, logs, backups, credentials or signing material here.

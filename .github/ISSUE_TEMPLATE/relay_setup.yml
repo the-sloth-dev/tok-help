@@ -1,0 +1,81 @@
+{
+  "name": "Private-network relay setup",
+  "description": "Request a quote for paid help planning or setting up a Tok-compatible relay",
+  "title": "[Relay setup]: ",
+  "labels": [
+    "relay-setup"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Request a quote for paid relay setup assistance. This is a PUBLIC issue, not a purchase. Share only high-level requirements. Do not post hostnames, IP addresses, network diagrams, VPN profiles, credentials, keys, personal information or diagnostic exports. Feasibility, scope, price and private handling of any sensitive details must be agreed before work begins."
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "goal",
+      "attributes": {
+        "label": "What would you like to achieve?",
+        "description": "Describe the goal without identifying your organization, users or network."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "network",
+      "attributes": {
+        "label": "Network environment",
+        "options": [
+          "Private LAN",
+          "VPN-connected network",
+          "Restricted or isolated network",
+          "Other / not sure"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "scope",
+      "attributes": {
+        "label": "What help do you need?",
+        "options": [
+          "Planning and feasibility",
+          "New relay setup and client configuration",
+          "Help with an existing relay",
+          "Not sure yet"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "constraints",
+      "attributes": {
+        "label": "High-level requirements and constraints",
+        "description": "For example: general hosting preference or outbound-access restrictions. Do not share addresses, topology or configuration files."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "additional",
+      "attributes": {
+        "label": "Anything else?",
+        "description": "Optional non-sensitive context. No access details, billing information or diagnostic exports."
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}
