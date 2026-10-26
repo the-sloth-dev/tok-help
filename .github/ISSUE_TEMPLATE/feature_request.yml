@@ -1,0 +1,61 @@
+{
+  "name": "Feature request",
+  "description": "Suggest an improvement for the app or website",
+  "title": "[Feature]: ",
+  "labels": [
+    "enhancement"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Search existing issues first. Reports and attachments are public. Do not include credentials, private messages, personal information, invitation QR codes or keys. Attach diagnostics only after reviewing and sanitizing them yourself. Nothing is uploaded automatically."
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "area",
+      "attributes": {
+        "label": "Affected area",
+        "options": [
+          "App",
+          "Website",
+          "Both"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "problem",
+      "attributes": {
+        "label": "Problem or use case"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "behavior",
+      "attributes": {
+        "label": "Requested behavior"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "alternatives",
+      "attributes": {
+        "label": "Alternatives considered"
+      },
+      "validations": {
+        "required": true
+      }
+    }
+  ]
+}

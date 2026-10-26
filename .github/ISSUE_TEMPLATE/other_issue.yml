@@ -1,0 +1,62 @@
+{
+  "name": "Other issue or question",
+  "description": "Ask for help or report an issue that is not a bug or feature request",
+  "title": "[Help]: ",
+  "labels": [
+    "question"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Search existing issues first. This report and all attachments are public. Do not include credentials, private messages, personal information, invitation links/QR codes or keys. Share diagnostics only after reviewing and sanitizing a copy yourself."
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "area",
+      "attributes": {
+        "label": "Affected area",
+        "options": [
+          "App",
+          "Website",
+          "Documentation",
+          "Other"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "summary",
+      "attributes": {
+        "label": "Summary"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "Question or issue details"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "tried",
+      "attributes": {
+        "label": "What have you tried?"
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

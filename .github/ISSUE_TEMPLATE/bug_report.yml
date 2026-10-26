@@ -1,0 +1,107 @@
+{
+  "name": "Bug report",
+  "description": "Report an app or website problem",
+  "title": "[Bug]: ",
+  "labels": [
+    "bug"
+  ],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Search existing issues first. Reports and attachments are public. Do not include credentials, private messages, personal information, invitation QR codes or keys. Attach diagnostics only after reviewing and sanitizing them yourself. Nothing is uploaded automatically."
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "area",
+      "attributes": {
+        "label": "Affected area",
+        "options": [
+          "App",
+          "Website"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Version / build",
+        "description": "For the app use version+build; for the website use page URL and browser/version. Write not applicable if needed."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "platform",
+      "attributes": {
+        "label": "Platform",
+        "options": [
+          "Android",
+          "Website"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "device",
+      "attributes": {
+        "label": "Device and OS",
+        "description": "Device model and OS version; for the website include browser/version and screen size."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Steps to reproduce"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "Expected behavior"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "actual",
+      "attributes": {
+        "label": "Actual behavior"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "attachments",
+      "attributes": {
+        "label": "Reviewed attachments (optional)",
+        "description": "Manually attach screenshots or a reviewed sanitized diagnostic export. Exclude credentials, private messages, personal information, keys and invitation links. Never put diagnostics in URL parameters."
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}
